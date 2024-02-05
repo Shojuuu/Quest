@@ -14,6 +14,7 @@
     function init() {
       id("yes-btn").addEventListener("click", weParty);
       id("no-btn").addEventListener("mouseover", moveButton);
+      id("no-btn").addEventListener("click", moveButton);
       id("reset-btn").addEventListener("click", resetPage);
     }
   
@@ -21,7 +22,6 @@
      * Move the button
      */
     function moveButton() {
-      console.log("move button");
       const top = getRandomNumber(window.innerHeight - this.offsetHeight);
       const left = getRandomNumber(window.innerWidth - this.offsetWidth);
   
