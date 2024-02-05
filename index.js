@@ -73,6 +73,12 @@
       timer = null;
   
       audio.pause();
+
+      // Remove all confetti
+      var confettiElements = document.getElementsByTagName("canvas");
+      for (const c of confettiElements) {
+          c.remove();
+      }
   
       id("no-button").style.left = '';
       id("no-button").style.top = '';
